@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한강군 군수사령부</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>전승을 보장하는 힘, 대한강군 군수사령부</h1>
+    </div>
+
+    <div class="main-container">
+        <div class="announcement-form">
+            <h2>새 공지 작성</h2>
+            <input type="text" id="announcementTitle" placeholder="공지 제목">
+            <textarea id="announcementContent" placeholder="공지 내용"></textarea>
+            <input type="text" id="announcementAuthor" placeholder="작성자">
+            <button id="registerButton">등록</button>
+        </div>
+
+        <div class="announcements-section">
+            <div class="announcements-toolbar">
+                <span id="totalCount">총 공지 수: 0건</span>
+                <input type="text" id="searchInput" placeholder="제목으로 검색...">
+            </div>
+            <div class="announcements-list">
+                <!-- Announcements will be loaded here by app.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- New div for announcement details -->
+    <div class="announcement-detail" style="display: none;">
+        <h2>공지 상세 내용</h2>
+        <h3 id="detailTitle"></h3>
+        <p id="detailAuthorDate"></p>
+        <p id="detailViews"></p>
+        <div id="detailContent"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
