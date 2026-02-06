@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>군수사령부 공지게시판</title>
+    <style>
+        /* General styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Header styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #1B2A4A;
+            color: white;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #C5A55A; /* Gold accent for logo */
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 25px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #C5A55A; /* Gold on hover */
+        }
+
+        /* Hero Section styles */
+        #hero {
+            background-color: #1B2A4A;
+            color: white;
+            height: 100vh; /* Full viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px; /* Add some horizontal padding */
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+
+        #hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #C5A55A; /* Gold for main title */
+        }
+
+        #hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+
+        #hero .button {
+            background-color: #C5A55A; /* Gold button */
+            color: #1B2A4A; /* Navy text on button */
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        #hero .button:hover {
+            background-color: #d4b56b; /* Slightly darker gold on hover */
+            color: #0d1a2f; /* Slightly darker navy */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">군수사령부</div>
+        <nav>
+            <ul>
+                <li><a href="#">주요기능</a></li>
+                <li><a href="#">사용방법</a></li>
+                <li><a href="index.html">게시판 바로가기</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>군수사령부 공지게시판</h1>
+        <p>공지사항을 체계적으로 등록·조회·관리하는 내부 서비스</p>
+        <a href="index.html" class="button">게시판 바로가기</a>
+    </section>
+
+    <script>
+        // No specific JavaScript needed for this initial request, but included for future expansion.
+    </script>
+</body>
+</html>
